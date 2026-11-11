@@ -1,3 +1,4 @@
+from pathlib import Path
 import sqlite3
 import random
 from datetime import datetime, timedelta
@@ -12,7 +13,8 @@ three_month_before = today - relativedelta(months=3)
 date_range = pd.date_range(start=three_month_before, end=today)
 date_list = date_range.tolist()
 
-dbname = "dummy_tasks.db"
+BASE_DIR = Path(__file__).resolve().parent
+dbname = BASE_DIR / "dummy_tasks.db"
 conn = sqlite3.connect(dbname)
 cur = conn.cursor()
 
