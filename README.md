@@ -15,6 +15,10 @@ Pythonで開発した、タスク管理用デスクトップアプリケーシ�
 - タスクソート：カテゴリ・日付などを基準にタスクをソート
 - データベース管理：SQLiteを使用してタスク情報を保存
 
+## 動作画面
+<img src="images/image1.png"> \
+<img src="images/image2.png">
+
 ## 使用技術
 
 - Python
